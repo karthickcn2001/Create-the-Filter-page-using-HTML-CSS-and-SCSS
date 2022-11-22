@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11 diy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="icon">
+            <div class="logo">
+                e!
+            </div>
+        </div>
+
+        <div class="alignmentforloginnewaccount">
+            <button class="login">Login</button>
+            <button class="newaccount">Create an account</button>
+        </div>
+    </div>
+
+    <h2>Breakfast Places in Mumbai</h2>
+    
+    <div class="filters1">
+        <span class="mqalignsort">
+        <h3 class="filterhead">Filters</h3>
+        <h3 class="mqsort">/&nbsp;Sort</h3>
+        </span>
+        <h5 class="location">Select Location</h5>
+        <div class="dropdown">
+            <input type="text" list="cities" placeholder="Select Location" class="dropdowndatalist"/>
+            <datalist id="cities">
+                <option>Chennai</option>
+                <option>Mumbai</option>
+                <option>Bangalore</option>
+                <option>Delhi</option>
+                <option>Kolkata</option>
+                <option>Hyderabad</option>
+            </datalist>
+        </div>
+    </div> 
+    
+    <div class="filters2">
+        <h5 class="cuisine"> Cuisine</h5>
+        <div class="checkboxdata">
+            <input type="checkbox" class="spacearound">
+                <label> North Indian</label><br>
+            <input type="checkbox" class="spacearound">
+                <label> South Indian</label><br>
+            <input type="checkbox" class="spacearound">
+                <label>Chinese</label><br>
+            <input type="checkbox" class="spacearound">
+                <label>Fast food</label><br>
+            <input type="checkbox" class="spacearound">
+                <label>Street food</label><br>
+        </div>
+            <h5 class="costfortwo"> Cost For Two</h5>
+            <div class="radiodata">
+                    <input type="radio" name="action" class="spacearound">
+                        <label>Less than ₹500</label><br>
+                    <input type="radio" name="action" class="spacearound">
+                        <label>₹500 to ₹1000</label><br>
+                    <input type="radio" name="action" class="spacearound">
+                        <label>₹1000 to ₹1500</label><br>
+                    <input type="radio" name="action" class="spacearound">
+                        <label>₹1500 to ₹2000</label><br>
+                    <input type="radio" name="action" class="spacearound">
+                        <label>₹2000+</label><br>
+            </div>
+                <h5 class="sort">Sort</h5>
+                <div class="radiodata">
+                    <input type="radio" name="actions" class="spacearound">
+                        <label>Price low to high</label><br>
+                    <input type="radio" name="actions" class="spacearound">
+                        <label>Price high to low</label><br>
+                </div>
+    </div>
+
+    <div class="box1">
+        <img src="bake1.jpg" alt="img not found" width="90px" height="90px" class="img1">
+        <div class="boxcontentalign">
+            <div class="box1text1">The Big Chill Cakery</div>
+            <div class="box1text2">FORT</div>
+            <div class="box1text3">Shop 1, Plot D, Samruddhi Complex, Chincholi ...</div>
+        </div>
+        <hr class="hor" color="grey">
+        <div class="boxfooteralign">
+            <div class="box1text4">CUISINES:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:cursive; color: black;">Bakery</span></div>
+            <div class="box1text5">COST FOR TWO:&nbsp;&nbsp;&nbsp;<span style="font-family:cursive; color: black;">₹700</span></div>
+        </div>
+    </div>
+
+    <div class="box2">
+        <img src="bake2.jpg" alt="img not found" width="90px" height="90px" class="img2">
+        <div class="boxcontentalign">
+            <div class="box2text1">The Bake Shop</div>
+            <div class="box2text2">FORT</div>
+            <div class="box2text3">Shop 1, Plot D, Samruddhi Complex, Chincholi ...</div>
+        </div>
+        <hr class="hor" color="grey">
+        <div class="boxfooteralign">
+            <div class="box2text4">CUISINES:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:cursive ; color: black;">Bakery</span></div>
+            <div class="box2text5">COST FOR TWO:&nbsp;&nbsp;&nbsp;<span style="font-family:cursive ; color: black;">₹700</span></div>
+        </div>
+    </div>
+    
+    <div class="nextpagebuttonsalign">
+        <button class="nextpagebuttonstyles"><</button>
+        <button class="nextpagebuttonstyles" id="selectedbutton">1</button>
+        <button class="nextpagebuttonstyles">2</button>
+        <button class="nextpagebuttonstyles">3</button>
+        <button class="nextpagebuttonstyles">4</button>
+        <button class="nextpagebuttonstyles">5</button>
+        <button class="nextpagebuttonstyles">6</button>
+        <button class="nextpagebuttonstyles">></button>
+    </div>
+</body>
+</html>

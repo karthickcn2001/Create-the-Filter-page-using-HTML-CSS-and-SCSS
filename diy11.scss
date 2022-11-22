@@ -1,0 +1,447 @@
+$leftalign:10%;
+$filterleftalign:10px;
+$fontfam:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+@mixin filtersubtext {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: $filterleftalign;
+    margin-top: -10px;
+    margin-bottom: 18px;
+    font-weight:600;
+}
+
+@mixin filtercontent{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight:400;
+}
+
+@mixin boxhead1style {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 2px;
+}
+
+@mixin boxhead2style {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+@mixin boxhead3style {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: smaller;
+    font-style: oblique;
+    margin-bottom: 2px;
+}
+
+@mixin boxhead4_5style {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    margin: 5px;
+    margin-left: 20px;
+    color: gray;
+}
+
+@mixin buttonformat{
+    background-color: transparent;
+    border: 1px solid rgba(0, 110, 255, 0.459);
+    border-radius: 2px;
+    font-size: 17px;
+    color:rgba(0, 0, 255, 0.658);
+}
+
+.navbar{
+    height: 60px;
+    width: 100%;
+    background-color: red;
+    
+    .icon{
+        border-radius: 50%;
+        height:50px;
+        width:50px;
+        background-color: white;
+        margin-left: $leftalign;
+        position: relative;
+        top: 5px;
+    }
+    
+    .logo{
+        font-size: 31px;
+        color: red;
+        position: absolute;
+        left: 14px;
+        top: 5px;
+    }
+    .alignmentforloginnewaccount{
+        position: absolute;
+        left: 1000px;
+        top: 23px;
+    }
+    
+    .login{
+        height: 30px;
+        background-color: transparent;
+        color: white;
+        font-size: 20px;
+        border: none;
+        
+    }
+    
+    .newaccount{
+        height: 30px;
+        background-color: transparent;
+        color: white;
+        font-size: 20px;
+        border: 1px solid white;
+        
+    }
+}
+
+h2{
+    font-family: $fontfam;
+    margin-left: $leftalign;    
+}
+
+.filters1{
+    border: 2px solid white;
+    border-bottom: white;
+    width: 300px;
+    height: 120px;
+    margin-left: $leftalign;
+    box-shadow: 5px 5px 5px 5px rgb(206, 205, 205);
+}
+
+.filters2{
+    border: 2px solid white;
+    border-top: white;
+    width: 300px;
+    height: 500px;
+    margin-left: $leftalign;
+    box-shadow: 5px 5px 5px 5px rgb(206, 205, 205);
+}
+
+.filterhead{
+    font-family: $fontfam;
+    margin-left: $filterleftalign;
+    margin-top: 10px;
+}
+.location{
+    @include filtersubtext; 
+}
+
+.dropdowndatalist{
+    height: 30px; 
+    width: 250px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    margin-top: -30px;
+    margin-left: $filterleftalign;
+}
+
+.cuisine{
+    @include filtersubtext;
+    margin-top: 20px;
+}
+
+.checkboxdata{
+    @include filtercontent;
+    margin-left: $filterleftalign;
+    margin-top: -10px;
+}
+.spacearound{
+    margin-bottom: 10px;
+}
+
+.costfortwo,.sort{
+    @include filtersubtext;
+    margin-top: 10px;
+}
+
+.mqsort{
+    @include filtersubtext;
+    margin-top: 10px;
+    display: none;
+}
+
+
+.radiodata{
+    @include filtercontent;
+    margin-left: $filterleftalign;
+    margin-top: -10px;
+}
+
+/*Nesting for box1*/ 
+.box1{
+    height:200px;
+    width: 58%;
+    border: 2px solid whitesmoke;
+    border-radius: 2px;
+    position: absolute;
+    left: 460px;
+    top: 144px;
+    box-shadow: 5px 5px 5px 5px rgb(206, 205, 205);
+    .img1{
+        border-radius: 20px;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+
+}
+
+/*common properties for box1 & box2*/
+.hor{
+    margin-top: 120px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.boxcontentalign{
+    position: absolute;
+    top: 20px;
+    left: 120px;
+}
+
+.box1text1,.box2text1{
+    @include boxhead1style
+}
+.box1text2,.box2text2{
+    @include boxhead2style
+}
+.box1text3,.box2text3{
+    @include boxhead3style
+}
+.box1text4,.box1text5,.box2text4,.box2text5{
+    @include boxhead4_5style
+}
+.boxfooteralign{
+    margin-top: 15px;
+}
+.nextpagebuttonsalign{
+    position: absolute;
+    left: 750px;
+    top: 585px;
+}
+.nextpagebuttonstyles{
+    @include buttonformat
+}
+#selectedbutton{
+    background-color: rgba(0, 110, 255, 0.459);
+    color: white;
+}
+
+/*Nesting for box2*/ 
+.box2{
+    height:200px;
+    width: 58%;
+    border: 2px solid whitesmoke;
+    box-shadow: 5px 5px 5px 5px rgb(206, 205, 205);
+    border-radius: 2px;
+    position: absolute;
+    left: 460px;
+    top: 360px;
+
+    .img2{
+        border-radius: 20px;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+}
+
+@media all and (max-width: 1115px) and (min-width: 150px) {
+    h2{
+        margin-left: 194px;   
+    }
+   
+    .navbar .alignmentforloginnewaccount {
+      position: absolute;
+      left: 780px;
+      top: 23px;
+    }
+    .navbar .icon {
+      margin-left: 5%;
+      position: relative;
+      top: 5px;
+    }
+    .filters1 {
+      width: 58.5%;
+      height: 50px;
+      margin-left: 194px;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+    }
+    .filters1 .mqsort {
+      display: block;
+      position: absolute;
+      top: -2px;
+      left: 68px;
+    }
+    .location {
+      display: none;
+    }
+    .filters2 {
+      display: none;
+    }
+    .dropdowndatalist {
+      height: 30px;
+      width: 20px;
+      border: none;
+      border-radius: 0px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      padding-left: 20px;
+      padding-bottom: 5px;
+      margin-top: 5px;
+      margin-left: 450px;
+    }
+    .box1 {
+      position: absolute;
+      left: 200px;
+      top: 220px;
+      box-shadow: 5px 5px 5px 5px rgb(206, 205, 205);
+    }
+    .box2{
+        position: absolute;
+      left: 200px;
+      top: 450px;
+    }
+    .nextpagebuttonsalign{
+        position: absolute;
+        left: 420px;
+        top: 690px;
+    }
+  }
+    
+  @media all and (max-width: 640px) and (min-width: 150px) {
+    h2{
+        margin-left: 140px;   
+    }
+   
+    .navbar .alignmentforloginnewaccount {
+      position: absolute;
+      left: 300px;
+      top: 23px;
+    }
+    .navbar .icon {
+      margin-left: 5%;
+      position: relative;
+      top: 5px;
+    }
+    .filters1 {
+      width: 58.5%;
+      height: 50px;
+      margin-left: 140px;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+    }
+    .filters1 .mqsort {
+      display: block;
+      position: absolute;
+      top: -2px;
+      left: 68px;
+    }
+    .location {
+      display: none;
+    }
+    .filters2 {
+      display: none;
+    }
+    .dropdowndatalist {
+      height: 30px;
+      width: 20px;
+      border: none;
+      border-radius: 0px;
+      margin-top: 5px;
+      margin-left: 200px;
+      
+    }
+    .box1 {
+      position: absolute;
+      left: 148px;
+      top: 220px;
+      box-shadow: 5px 5px 5px 5px rgb(206, 205, 205);
+    }
+    .box2{
+        position: absolute;
+      left: 148px;
+      top: 450px;
+    }
+    .nextpagebuttonsalign{
+        position: absolute;
+        left: 220px;
+        top: 690px;
+    }
+  }
+
+  @media all and (max-width: 380px) and (min-width: 150px) {
+    h2{
+        margin-left: -8px;   
+    }
+   
+    .navbar .alignmentforloginnewaccount {
+      position: absolute;
+      left: 105px;
+      top: 23px;
+    }
+    .navbar .icon {
+      margin-left:5px;
+      position: relative;
+      top: 5px;
+    }
+    .filters1 {
+      width: 350px;
+      height: 50px;
+      margin-left: -8px;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+    }
+    .filters1 .mqsort {
+      display: block;
+      position: absolute;
+      top: -2px;
+      left: 68px;
+    }
+    .location {
+      display: none;
+    }
+    .filters2 {
+      display: none;
+    }
+    .dropdowndatalist {
+      height: 30px;
+      width: 20px;
+      border: none;
+      border-radius: 0px;
+      margin-top: 5px;
+      margin-left: 200px;
+      
+    }
+    .box1 {
+      position: absolute;
+      left: 0px;
+      top: 220px;
+      width: 350px;
+    }
+    .box2{
+        position: absolute;
+      left: 0px;
+      top: 450px;
+      width: 350px;
+    }
+    .nextpagebuttonsalign{
+        position: absolute;
+        left: 75px;
+        top: 690px;
+    }
+  }
+    
+
+
